@@ -1,0 +1,33 @@
+#Aula 05 - Funções e cidadão de primeira classe
+
+##O que são funções?
+Funções são estruturas que nos possibilitam isolar uma determinada lógica e dar nome a ela, permitindo que a chamemos em vários pontos de nosso código! Elas ajudam muito organizar o nosso cógido e deixar ele mais legível.
+
+Para declarar uma função, basta utilizarmos a palvatra ```function``` seguido do nome da função e um corpo, que seria a lógica que desejamos isolar.
+Ex. com uma função chamada *calcula imc*
+
+```
+//arquivo calcula-imc.js
+
+function calculaImc(){
+	if(paciente.altura != 0){
+		var imc = paciente.peso / (paciente.altura * paciente.altura);
+
+		var tdImc = pacienteTr.getElementsByClassName("info-imc")[0];
+		tdIcm.textContent = imc;
+
+		console.log(imc);
+	}else{
+
+		console.log("Não posso dividir por zero!");
+	}
+}
+```
+*Observação*: Existe também uma outra forma de se criar uma função, que é atribuido-a a uma variável:
+
+```
+var calculaImc = function() {
+	//corpo da função
+}
+```
+Mas, nesse curso ficaremos com a primeira opção.
